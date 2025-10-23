@@ -20,6 +20,9 @@ public class HomePage : Driver
     [FindsBy(How = How.Id, Using = "nav-link-accountList")]
     public IWebElement _signInLink;
 
+    [FindsBy(How = How.XPath, Using = "//button[@type='submit']")]
+    public IWebElement _continueShopping;
+
 
 
     public HomePage()

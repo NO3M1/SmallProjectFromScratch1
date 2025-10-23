@@ -11,6 +11,7 @@ using WebDriverManager.DriverConfigs.Impl;
 namespace Project2.Source.Drivers;
 public class Driver
 {
+    [ThreadStatic]
     public static IWebDriver _driver;
 
     [SetUp]
